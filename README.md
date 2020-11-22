@@ -14,7 +14,6 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 ## 📌 Ajustes e melhorias
 O site ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-(Próxima atualização: 15/11/2020)
 
 - [x] Novo design;
 - [ ] Ajustes no novo design;
