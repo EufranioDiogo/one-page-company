@@ -2,253 +2,228 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Empresa</title>
-    <!--Ícones no navegador-->
-    <link rel="icon" type="image/png" href="image/logoNavegador.png" sizes="32x32">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onepage empresa</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <!--Ícones do Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!--Meus Styles-->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
-    <!--Barra de navegação-->
-    <section id="headerNav">
-        <a href="#">
-            <h1 class="logo">Empresa</h1>
-        </a>
-        <a class="btn-menu"><i class="fa fa-bars"></i></a>
-        <nav class="menu">
-            <a class="btn-close"><i class="fa fa-close"></i></a>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <!--<li><a href="#" id="contatoMenu" data-toggle="modal" data-target="#exampleModal">Contato</a></li>-->
-            </ul>
-        </nav>
-        <!--<img src="image/button.png" alt="Entrar em contato" id="buttonContato" data-toggle="modal"
-            data-target="#exampleModal" />-->
-    </section>
 
-    <!--Header-->
-    <header id="home">
-        <section>
-            <article>
-                <h1>
-                    Saia da caixa,<br>
-                    coloque a sua ideia no mundo!
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde nobis molestiae, aliquam
-                    fugiat commodi ea nostrum dolorum.</p>
-            </article>
-        </section>
+    <nav>
+        <h2>logo.</h2>
+        <ul>
+            <li><a href="#sobre">home</a></li>
+            <li><a href="#servicos">services</a></li>
+            <li><a href="#valores">prices</a></li>
+            <li><a href="#email">contact</a></li>
+        </ul>
+    </nav>
 
-        <section id="ilustracaoUm">
-            <img src="image/ilustracaoUm.png" alt="" />
-        </section>
+    <header>
+        <div id="redes-sociais">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-google-plus"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <div id="linha"></div>
+        </div>
+
+        <article>
+            <h2>social<br> media for business</h2>
+            <p>perfomance based social media agency<br> we are lorem media</p>
+            <button>get a free audit</button>
+        </article>
+        <!--Imagem de fundo-->
+        <img src="assets/image/fundo-menu.png" alt="" id="fundo-menu">
+
+        <!--Imagem do mouse-->
+        <img src="assets/image/mouse.png" alt="" id="teste">
+
     </header>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#454d72" fill-opacity="1"
-            d="M0,128L34.3,154.7C68.6,181,137,235,206,224C274.3,213,343,139,411,138.7C480,139,549,213,617,213.3C685.7,213,754,139,823,117.3C891.4,96,960,128,1029,133.3C1097.1,139,1166,117,1234,138.7C1302.9,160,1371,224,1406,256L1440,288L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
-        </path>
-    </svg>
+    <section id="sobre">
+        <article id="sobre-image">
+            <img src="assets/image/image-sobre.png" alt="" id="image-sobre">
+        </article>
 
-    <main>
+        <article id="sobre-texto">
+            <div>
+                <h3>Biography</h3>
+                <h2>Who We Are</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae recusandae obcaecati reiciendis
+                    praesentium exercitationem quas nam delectus unde, hic, alias laborum voluptatum nobis earum
+                    commodi,
+                    saepe nulla enim quo dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+                    recusandae
+                    obcaecati reiciendis alias laborum voluptatum nobis earum commodi, saepe nulla enim quo dolorum.</p>
+                <button>see more</button>
+            </div>
+        </article>
+    </section>
 
-        <!--scroll top-->
-        <div id="stop" class="scrollTop">
-            <span><a href=""><i class="fa fa-arrow-up"></i></a></span>
+    <section id="servicos">
+        <div id="titulo">
+            <h3>our services</h3>
+            <h2>what we offer</h2>
         </div>
 
-        <!--Primeira seção-->
-        <section id="cards">
-            <div>
-                <article>
-                    <img src="image/seguranca.png" alt="ícone do card" />
-                    <h1>Segurança</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                        explicabo quas eveniet.
-                    </p>
-                </article>
-
-                <article>
-                    <img src="image/comunidade.png" alt="ícone do card" />
-                    <h1>Comunidade</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                        explicabo quas eveniet.
-                    </p>
-                </article>
-
-                <article>
-                    <img src="image/criatividade.png" alt="ícone do card" />
-                    <h1>Criatividade</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                        explicabo quas eveniet.
-                    </p>
-                </article>
-
-                <article>
-                    <img src="image/grafico.png" alt="ícone do card" />
-                    <h1>Gráfico</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                        explicabo quas eveniet.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <!--Segunda seção-->
-        <section id="sobre">
-            <article id="imgSobre">
-                <img src="image/ilustracaoDois.png" alt="" />
+        <div id="separacao">
+            <article>
+                <div>
+                    <img src="assets/image/001-process.png" alt="">
+                </div>
+                <h2>social media management</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
+                <button>see more</button>
             </article>
 
-            <article id="sobreNos">
-                <article id="headSobre">
-                    <h2>Sobre o que fazemos</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-                        quaerat nam deserunt officia labore?
-                    </p>
-                    <h3>Lorem ipsum dolor sit amet</h3>
-                </article>
-                <section id="infoSobre">
-                    <article>
-                        <h4>Lorem Ipsum</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                            viverra sagittis enim proin mauris
-                        </p>
-                    </article>
-                    <article>
-                        <h4>Lorem Ipsum</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                            viverra sagittis enim proin mauris
-                        </p>
-                    </article>
-                    <article>
-                        <h4>Lorem Ipsum</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                            viverra sagittis enim proin mauris
-                        </p>
-                    </article>
-                    <article>
-                        <h4>Lorem Ipsum</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                            viverra sagittis enim proin mauris
-                        </p>
-                    </article>
-                </section>
+            <article>
+                <div>
+                    <img src="assets/image/002-social-media.png" alt="">
+                </div>
+                <h2>social media management</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
+                <button>see more</button>
             </article>
-        </section>
 
-        <!--Terceira seção-->
-        <section id="portfolio">
-            <h2>Nossos últimos trabalhos</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                Fermentum ultrices feugiat aliquet sit in nulla.
-            </p>
+            <article>
+                <div>
+                    <img src="assets/image/003-responsive.png" alt="">
+                </div>
+                <h2>social media management</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
+                <button>see more</button>
+            </article>
 
-            <div>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-            </div>
-        </section>
+            <article>
+                <div>
+                    <img src="assets/image/004-analysis.png" alt="">
+                </div>
+                <h2>social media management</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
+                <button>see more</button>
+            </article>
 
-        <section id="email">
-            <h3>Entre em contato conosco</h3>
-            <div>
-                <input type="email" placeholder="Digite seu melhor email aqui...">
-                <button>Enviar</button>
-            </div>
-        </section>
+            <article>
+                <div>
+                    <img src="assets/image/005-social-media.png" alt="">
+                </div>
+                <h2>social media management</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
+                <button>see more</button>
+            </article>
 
-        <!--Quarta seção-->
-        <section id="servicos">
-            <h2>Em que nossos serviços vão te ajudar?</h2>
-            <p id="descricaoServicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Fermentum ultrices feugiat aliquet sit in nulla.</p>
-            <img src="image/ilustracaoTres.png" alt="" class="teste" />
+            <article>
+                <div>
+                    <img src="assets/image/006-computer.png" alt="">
+                </div>
+                <h2>social media management</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
+                <button>see more</button>
+            </article>
+        </div>
+    </section>
 
-            <section>
-                <article class="separarBoxs boxsFrente">
-                    <article class="flexBoxs">
-                        <div>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
+    <section id="valores">
+        <h3>Pricing</h3>
+        <h2>Our Pricing</h2>
+        <div>
+            <article>
+                <h2>gold packge</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+                    minus quo.</p>
+                <h3>$ 000</h3>
+                <button>see details</button>
+            </article>
 
-                    <article class="flexBoxs">
-                        <div>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
-                </article>
+            <article>
+                <h2>platinum package</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+                    minus quo.</p>
+                <h3>$ 000</h3>
+                <button id="ativo">see details</button>
+            </article>
 
-                <article class="separarBoxs">
-                    <article class="flexBoxs">
-                        <div>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
+            <article>
+                <h2>silver package</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+                    minus quo.</p>
+                <h3>$ 000</h3>
+                <button>see details</button>
+            </article>
+        </div>
+        <article id="bolinhas">
+            <div></div>
+            <div></div>
+            <div id="bolinha-maior"></div>
+        </article>
+    </section>
 
-                    <article class="flexBoxs">
-                        <div>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
-                </article>
+    <section id="email">
+        <h3>Newsletter</h3>
+        <h2>Do you want to get <span>Spacial News?</span></h2>
 
-                <article class="separarBoxs boxsFrente">
-                    <article class="flexBoxs">
-                        <div>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
-
-                    <article class="flexBoxs">
-                        <div>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
-                </article>
-            </section>
-        </section>
-    </main>
+        <div>
+            <input type="email" placeholder="Drop Your Email">
+            <button>subscribe</button>
+        </div>
+    </section>
 
     <footer>
-        <h2>Empresa</h2>
-        <div>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-facebook"></i>
-        </div>
+        <article>
+            <div id="footer-sobre">
+                <h1>logo.</h1>
+                <h2>Stay on touch</h2>
+                <ul>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Office</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Hours</h3>
+                <ul>
+                    <li><a href="#">Monday: 9:00 - 18:00</a></li>
+                    <li><a href="#">Tuesday: 9:00 - 18:00</a></li>
+                    <li><a href="#">Wednesday: 9:00 - 18:00</a></li>
+                    <li><a href="#">Thursday: 9:00 - 18:00</a></li>
+                    <li><a href="#">Friday: 9:00 - 18:00</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fa fa-phone"></i><a href="#">000-000-0000</a></li>
+                    <li><i class="fa fa-envelope"></i><a href="#">info@email.com</a></li>
+                    <li><i class="fa fa-map-marker"></i><a href="#">New York, US</a></li>
+                </ul>
+            </div>
+        </article>
     </footer>
 
-    <!--Meus Scripts-->
-    <script src="js/script.js"></script>
 </body>
 
 </html>
