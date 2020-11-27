@@ -15,28 +15,61 @@ a{
 li{
     list-style: none;
 }
-
 /*Menu*/
-nav{
-    height: 20vh;
+#menu-todo{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 100px;
+    float: left;
+    padding: 2% 30px;
+    z-index: 6;
 }
-nav h2{
-    font-size: 42px;
-    color: #414141;
+.logo{
+    float: left;
+    font-size: 38px;
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+    line-height: 56px;
 }
-nav ul li{
-    display: inline-block;
+h1 span{
+    color: #f00;
+}
+.btn-menu{
+    float: right;
+    text-align: center;
     color: #fff;
+    cursor: pointer;
+    font-size: 2em;
+    line-height: 56px;
+    background-color: transparent;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(64,112,244);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.menu ul{
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.menu li{
+    padding: 3%;
+}
+.menu a{
+    color: #fff;
+    padding: 2% 3%;
     text-transform: uppercase;
-    margin-left: 25px;
 }
-nav ul li a{
-    color: #fff;
+.btn-close{
+  float: right;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2em;
+  margin-right: 10%;
+  margin-top: 2%;
 }
 /*cabeçalho*/
 header{
@@ -49,7 +82,9 @@ header{
     position: absolute;
     right: 0;
     top: 0;
-    width: 700px;
+    width: 60%;
+    max-width: 700px;
+    min-width: auto;
     z-index: -1;
 }
 header article button{
@@ -79,13 +114,13 @@ header article p{
 header #redes-sociais{
     position: absolute;
     left: -10px;
-    top: 50%;
+    top: 60%;
     rotate: 90deg;
 }
 header #redes-sociais i{
     margin: 0px 20px;
     color: #7d76f8;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
 }
 header #redes-sociais #linha{
@@ -94,10 +129,11 @@ header #redes-sociais #linha{
     background-color: #7d76f8;
     display: inline;
 }
-header #teste{
+header #botao-mouse{
     position: absolute;
-    bottom: 75px;
+    bottom: 30px;
     left: 50%;
+    transform: translate(-50%, 0%);
     background-color: #fff;
     height: 50px;
     width: 50px;
@@ -109,26 +145,29 @@ header #teste{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 0px 0px 150px;
-    height: 100vh;
+    flex-wrap: wrap;
+    padding: 100px 150px 100px 150px;
+    height: auto;
 }
 #sobre #sobre-image{
-    width: 40%;
     height: 80%;
-    display: flex;
-    align-items: center;
+    padding: 50px;
 }
 #sobre article img{
-    width: 450px;
+    width: 100%;
+    max-width: 400px;
+    min-width: auto;
 }
 #sobre #sobre-texto{
     background-image: url('../image/fundo-sobre.png');
-    padding-right: 150px;
-    width: 60%;
     height: 80%;
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
+    padding: 30px;
+}
+#sobre article{
+    flex-basis: 50%;
 }
 #sobre article h3{
     color: #7d76f8;
@@ -171,6 +210,7 @@ header #teste{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-image: url('../image/fundo-servicos.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -191,12 +231,13 @@ header #teste{
 #servicos div article{
     background-color: #fff;
     margin-bottom: 50px;
-    flex-wrap: wrap;
     padding: 30px;
     flex-basis: 350px;
+    flex-grow: 1;
     border-radius: 30px;
     box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.100);
     overflow: hidden;
+    margin: 10px;
 }
 #servicos div article img{
     margin: 0 auto;
@@ -255,11 +296,11 @@ header #teste{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 #valores div article{
     background-color: #fff;
     margin-bottom: 50px;
-    flex-wrap: wrap;
     padding: 40px 45px;
     flex-basis: 350px;
     border-radius: 30px;
@@ -295,7 +336,6 @@ header #teste{
 #valores div article button:hover{
     background-color: #7d76f8;
     color: #fff;
-
 }
 #valores div article #ativo{
     background-color: #7d76f8;
@@ -343,13 +383,14 @@ header #teste{
     margin-top: 35px;
 }
 #email div input{
-    width: 400px;
+    max-width: 400px;
     height: 50px;
     border: none;
     border-radius: 10px;
     padding-left: 30px;
     color: #747474;
     background-color: #f0f0f0;
+    margin-bottom: 20px;
 }
 #email div button{
     margin-left: 20px;
@@ -365,22 +406,23 @@ header #teste{
     font-weight: 500;
 }
 #email div button:hover{
-    background-color: #5a54c9;
+    background-color: #8f8db8;
 }
 /*footer*/
+svg{
+    margin-bottom: -10px;
+}
 footer{
-    background-image: url('../image/fundo-footer.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #7d76f8;
     width: 100%;
-    padding: 250px 100px 50px 100px;
+    padding: 0px 100px 50px 100px;
     color: #fff;
 }
 footer article{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 footer article div li i{
     width: 30px;
@@ -412,10 +454,107 @@ footer article #footer-sobre ul i{
     cursor: pointer;
 }
 footer article div{
-    height: 250px;
+    flex-basis: 200px;
+    height: auto;
+    padding: 20px;
+    flex-grow: 1;
 }
 footer article div h3{
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 25px;
+}
+/*Responsividade*/
+@media screen and (max-width:1325px){
+    #valores div article{
+        flex-basis: 400px;
+        flex-grow: 1;
+        margin: 10px;
+    }
+}
+@media screen and (max-width:1300px){
+    footer{
+        padding: 0px 30px 30px 30px;
+    }
+    footer article div{
+        flex-basis: 500px;
+        text-align: center;
+    }
+    #sobre{
+        text-align: center;
+    }
+    #sobre article{
+        flex-basis:100%;
+    }
+     
+}
+@media screen and (max-width:1200px){
+    header #redes-sociais{
+        display: none;
+    }
+       header{
+        padding: 0px 100px;
+    }
+
+   
+}
+@media screen and (max-width:900px){
+    #sobre{
+        padding: 30px;
+    }
+    #email{
+        padding: 30px;
+    }
+    #servicos #separacao{
+        padding: 20px;
+    }
+    #servicos #titulo{
+        margin-left: 0px;
+    }
+    #sobre #sobre-texto{
+        padding: 0px;
+    }
+    header{
+        padding: 0px 30px;
+    }
+    
+}
+@media screen and (max-width:650px){
+    #valores{
+        padding: 50px 10px;
+    }
+}
+/*Se tiver maior do que 900px*/
+@media screen and (min-width:900px){
+	.btn-menu{
+		display: none;
+	}
+	.btn-close{
+		display: none;
+	}
+	#menu-todo{
+        background-color: transparent;
+        z-index: 999;
+        width: 100%;
+        height: auto;
+        padding: 2% 100px;
+	}
+	.menu{
+		width: auto; 
+		height: 56px; 
+		line-height: 56px;
+		float: right;
+        display: block !important; 
+        position: static;
+        background-color: transparent;
+    }
+    .menu li{
+        padding: 0; 
+        float: left;
+    }
+    .menu li a{
+        padding: 15px;
+        color: #fff;
+        text-transform: uppercase;
+    }
 }
