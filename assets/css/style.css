@@ -20,7 +20,7 @@ li{
     width: 100%;
     float: left;
     padding: 2% 30px;
-    z-index: 6;
+    z-index: 999;
 }
 .logo{
     float: left;
@@ -139,6 +139,7 @@ header #botao-mouse{
     width: 50px;
     border-radius: 50%;
     box-shadow: 0px 5px 5px rgba(125, 118, 248, 0.281);
+    z-index: -1;
 }
 /*sobre*/
 #sobre{
@@ -363,7 +364,7 @@ header #botao-mouse{
 }
 /*email*/
 #email{
-    padding: 100px;
+    padding: 50px 100px;
     text-align: center;
 }
 #email h3{
@@ -540,10 +541,10 @@ footer article div h3{
         padding: 2% 100px;
 	}
 	.menu{
-		width: auto; 
-		height: 56px; 
-		line-height: 56px;
-		float: right;
+	width: auto; 
+	height: 56px; 
+	line-height: 56px;
+	float: right;
         display: block !important; 
         position: static;
         background-color: transparent;
