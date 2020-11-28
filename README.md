@@ -18,7 +18,6 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
 ---
 
-<br>[⬆ Voltar ao topo](#-seções)<br>
 
 ## 🌈 Contribuidores<br>
 <table>
