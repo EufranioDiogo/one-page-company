@@ -6,7 +6,7 @@
 One page with information about a company. 
 </h4>
 
-![Resultado final do projeto](image/resultado.jpg)
+![Resultado final do projeto](assets/image/resultado.jpg)
 
 
 ## 🛠 Tecnologias utilizadas
