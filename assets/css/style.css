@@ -9,6 +9,10 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+html {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
 a{
     text-decoration: none;
 }
@@ -21,6 +25,7 @@ li{
     float: left;
     padding: 2% 30px;
     z-index: 999;
+    transition: 0.5s;
 }
 .logo{
     float: left;
@@ -45,7 +50,7 @@ h1 span{
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: rgb(64,112,244);
+    background-color: #4070f4;
     top: 0;
     left: 0;
     display: none;
@@ -113,21 +118,26 @@ header article p{
 }
 header #redes-sociais{
     position: absolute;
-    left: -10px;
-    top: 60%;
-    rotate: 90deg;
+    top: 38%;
+    left: 7.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 header #redes-sociais i{
-    margin: 0px 20px;
     color: #7d76f8;
     font-size: 16px;
     cursor: pointer;
+    position: relative;
+    padding: 5px;
+    margin: 5px 0;
 }
 header #redes-sociais #linha{
     height: 2px;
     width: 100px;
     background-color: #7d76f8;
     display: inline;
+    width: 100%;
 }
 header #botao-mouse{
     position: absolute;
@@ -453,12 +463,22 @@ footer article #footer-sobre ul i{
     margin: 0px 10px;
     font-size: 18px;
     cursor: pointer;
+    color: #ffffffc9;
+}
+footer article #footer-sobre ul i:hover{
+    color: #fff;
 }
 footer article div{
     flex-basis: 200px;
     height: auto;
     padding: 20px;
     flex-grow: 1;
+}
+footer article div:nth-child(3) ul li a{
+    cursor: default;
+}
+footer article div:nth-child(4) ul li a{
+    cursor: default;
 }
 footer article div h3{
     font-size: 20px;
@@ -551,11 +571,24 @@ footer article div h3{
     }
     .menu li{
         padding: 0; 
+        margin: 0 5px;
         float: left;
     }
     .menu li a{
         padding: 15px;
-        color: #fff;
+        color: #ffffffc8;
         text-transform: uppercase;
+    }
+    .menu li a:hover{
+        color: #ffffff;
+    }
+    .menu > ul:nth-child(2) > li:nth-child(4) > a:nth-child(1){
+        background: #fffffff1;
+        border-radius: 30px;
+        color: #7c73f7ec;
+    }
+    .menu > ul:nth-child(2) > li:nth-child(4) > a:nth-child(1):hover{
+        background: #ffffff;
+        color: #7b73f7;
     }
 }
