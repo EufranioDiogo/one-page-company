@@ -38,5 +38,5 @@ Quer fazer parte desse projeto? É simples!<br>
 Faça um fork dele e coloque as suas modificações, depois mande um pull request.<br>
 
 <h3 align="center">
-🏰<br>Design do <strong><a href="https://www.behance.net/gallery/86422747/Landing-Page-For-Marketing-Agency-%28Freebie%29">Khan</strong>
+🏰<br>Design feito por <strong><a href="https://www.behance.net/gallery/86422747/Landing-Page-For-Marketing-Agency-%28Freebie%29">Khan</strong>
 </h3>
