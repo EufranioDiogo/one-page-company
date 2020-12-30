@@ -11,54 +11,44 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__top-part">
+            <h1 class="header__top-part__logo">logo.</h1>
 
-    <section id="menu-todo">
-    
-        <h1 class="logo">logo.</h1>
-
-        <div class="btn-menu"><i class="fa fa-bars"></i></div>
-        <!--Menu-->
-        <nav class="menu">
-            <a class="btn-close"><i class="fa fa-close"></i></a>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#servicos">services</a></li>
-                <li><a href="#valores">prices</a></li>
-                <li><a href="#email">contact</a></li>
-               
-            </ul>
-        </nav>
-    </section>
-
-    <header>
-        <div id="redes-sociais">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-google-plus"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <div id="linha"></div>
+            <!--Menu-->
+            <nav class="header__top-part__menu-container">
+                <i class="mobile-menu-button btn-close-mobile fa fa-close"></i>
+                <i class="mobile-menu-button btn-menu-mobile fa fa-bars"></i>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link menu-link_after-bar-withe" href="#">home</a></li>
+                    <li class="menu__item"><a class="menu__link menu-link_after-bar-withe" href="#servicos">services</a></li>
+                    <li class="menu__item"><a class="menu__link menu-link_after-bar-withe" href="#valores">prices</a></li>
+                    <li class="menu__item"><a class="menu__link menu-link_after-bar-withe" href="#email">contact</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <article>
-            <h2>social<br> media for business</h2>
-            <p>perfomance based social media agency<br> we are lorem media</p>
-            <button>get a free audit</button>
-        </article>
-        <!--Imagem de fundo-->
-        <img src="assets/image/fundo-menu.png" alt="" id="fundo-menu">
+        <div class="main-content-text-container">
+            <h2 class="main-content-text-container__title">social<br> media for business</h2>
+            <p class="main-content-text-container__text">perfomance based social media agency<br> we are lorem media</p>
+            <button class="main-content-text-container__button">get a free audit</button>
+        </div>
 
-        <!--Imagem do mouse-->
-        <img src="assets/image/mouse.png" alt="" id="botao-mouse">
-
+        <img src="assets/image/mouse.png" alt="" class="scroll-mouse-bottom">
+        
+        <ul class="redes-sociais">
+            <li class="redes-sociais__item"><i class="redes-sociais__icone fa fa-facebook"></i></li>
+            <li class="redes-sociais__item"><i class="redes-sociais__icone fa fa-google-plus"></i></li>
+            <li class="redes-sociais__item"><i class="redes-sociais__icone fa fa-twitter"></i></li>
+            <li class="redes-sociais__item"><i class="redes-sociais__icone fa fa-instagram"></i></li>
+        </ul>
     </header>
+    
 
-    <section id="sobre">
-        <article id="sobre-image">
-            <img src="assets/image/image-sobre.png" alt="" id="image-sobre">
-        </article>
 
-        <article id="sobre-texto">
-            <div>
+    <section class="sobre-container">
+        <article class="sobre-texto-container">
+            <div class="sobre-texto-container__content">
                 <h3>Biography</h3>
                 <h2>Who We Are</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae recusandae obcaecati reiciendis
@@ -69,11 +59,12 @@
                     obcaecati reiciendis alias laborum voluptatum nobis earum commodi, saepe nulla enim quo dolorum.</p>
                 <button>see more</button>
             </div>
+            <img src="assets/image/image-sobre.png" alt="" class="sobre-texto-container__image">
         </article>
     </section>
 
-    <section id="servicos">
-        <div id="titulo">
+    <section class="servicos">
+        <div class="servicos-header">
             <h3>our services</h3>
             <h2>what we offer</h2>
         </div>
@@ -141,48 +132,48 @@
         </div>
     </section>
 
-    <section id="valores">
-        <h3>Pricing</h3>
-        <h2>Our Pricing</h2>
-        <div>
-            <article>
-                <h2>gold packge</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+    <section class="valores-container">
+        <h3 class="valores-container__h3">Pricing</h3>
+        <h2 class="valores-container__h2">Our Pricing</h2>
+        <div class="valores-container__planos-container">
+            <div class="planos-container__plano">
+                <h2 class="plano__h2">gold packge</h2>
+                <p class="plano__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
                     minus quo.</p>
-                <h3>$ 000</h3>
-                <button>see details</button>
-            </article>
+                <h3 class="plano__h3">$ 300</h3>
+                <button class="plano__button">see details</button>
+            </div>
 
-            <article>
-                <h2>platinum package</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+            <div class="planos-container__plano">
+                <h2 class="plano__h2">platinum package</h2>
+                <p class="plano__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
                     minus quo.</p>
-                <h3>$ 000</h3>
-                <button id="ativo">see details</button>
-            </article>
+                <h3 class="plano__h3">$ 200</h3>
+                <button class="plano__button ativo">see details</button>
+            </div>
 
-            <article>
-                <h2>silver package</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
+            <div class="planos-container__plano">
+                <h2 class="plano__h2">silver package</h2>
+                <p class="plano__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
                     minus quo.</p>
-                <h3>$ 000</h3>
-                <button>see details</button>
-            </article>
+                <h3 class="plano__h3">$ 100</h3>
+                <button class="plano__button">see details</button>
+            </div>
         </div>
-        <article id="bolinhas">
-            <div></div>
-            <div></div>
-            <div id="bolinha-maior"></div>
-        </article>
+        <ul class="bolinhas-container">
+            <li class="bolinhas-container__bolinha"></li>
+            <li class="bolinhas-container__bolinha"></li>
+            <li class="bolinhas-container__bolinha bolinha-maior"></li>
+        </ul>
     </section>
 
-    <section id="email">
-        <h3>Newsletter</h3>
-        <h2>Do you want to get <span>Spacial News?</span></h2>
+    <section class="newsletter-subscription-container">
+        <h3 class="newsletter__h3">Newsletter</h3>
+        <h2 class="newsletter__h2">Do you want to get <strong>Spacial News?</strong></h2>
 
-        <div>
-            <input type="email" placeholder="Drop Your Email">
-            <button>subscribe</button>
+        <div class="newsletter__form">
+            <input type="email"class="email-input" placeholder="Drop Your Email">
+            <button class="button-submit">subscribe</button>
         </div>
     </section>
 
@@ -197,7 +188,7 @@
             <div id="footer-sobre">
                 <h1>logo.</h1>
                 <h2>Stay on touch</h2>
-                <ul>
+                <ul class="footer-list">
                     <i class="fa fa-facebook"></i>
                     <i class="fa fa-google-plus"></i>
                     <i class="fa fa-twitter"></i>
@@ -205,9 +196,9 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-div">
                 <h3>Quick Links</h3>
-                <ul>
+                <ul class="footer-list">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -216,9 +207,9 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-div">
                 <h3>Hours</h3>
-                <ul>
+                <ul class="footer-list">
                     <li><a href="#">Monday: 9:00 - 18:00</a></li>
                     <li><a href="#">Tuesday: 9:00 - 18:00</a></li>
                     <li><a href="#">Wednesday: 9:00 - 18:00</a></li>
@@ -227,9 +218,9 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-div">
                 <h3>Contact</h3>
-                <ul>
+                <ul class="footer-list">
                     <li><i class="fa fa-phone"></i><a href="#">000-000-0000</a></li>
                     <li><i class="fa fa-envelope"></i><a href="#">info@email.com</a></li>
                     <li><i class="fa fa-map-marker"></i><a href="#">New York, US</a></li>

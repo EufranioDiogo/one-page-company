@@ -1,17 +1,32 @@
 //Animação menu responsivo
-$('.btn-menu, .btn-close').on('click', function () {
+const openMobileMenuButton = document.querySelector('btn-menu-mobile');
+const closeMobileMenuButton = document.querySelector('btn-close-mobile');
+let buttonCloseVisible = false;
+
+$('.btn-close-mobile').hide();
+$('.menu').hide();
+
+$('.btn-menu-mobile, .btn-close-mobile').on('click', function () {
     $('.menu').slideToggle('slow');
+
+    if (buttonCloseVisible == false) {
+        buttonCloseVisible = true;
+        $('.btn-close-mobile').show();
+    } else {
+        buttonCloseVisible = false;
+        $('.btn-close-mobile').hide();
+    }
 });
 
-$('nav ul li').click(function () {
+$('.menu__link').click(function () {
     $('.menu').hide();
 });
 
 const screenSize = window.screen.width;
 
 if(screenSize > 765) {
-    const menu = document.getElementById('menu-todo');
-    const menuItens = document.querySelectorAll('#menu-todo .menu ul li a')
+    const menu = document.querySelector('.header__top-part');
+    const menuItens = document.querySelectorAll('.menu__link')
     var scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
     
     window.onscroll = function() {
@@ -21,6 +36,10 @@ if(screenSize > 765) {
             menu.style.backgroundColor = 'transparent';
             
             for(let i = 0; i < menuItens.length - 1; i++) {
+                if (menuItens[i].classList.contains('menu-link_after-bar-purple')) {
+                    menuItens[i].classList.add('menu-link_after-bar-withe');
+                    menuItens[i].classList.remove('menu-link_after-bar-purple');
+                }
                 menuItens[i].style.color = '#ffffffc8';
             }
             menuItens[menuItens.length - 1].style.color = '#7d76f8';
@@ -31,6 +50,10 @@ if(screenSize > 765) {
 
             for(let i = 0; i < menuItens.length - 1; i++) {
                 menuItens[i].style.color = '#7d76f8';
+                if (menuItens[i].classList.contains('menu-link_after-bar-withe')) {
+                    menuItens[i].classList.remove('menu-link_after-bar-withe');
+                    menuItens[i].classList.add('menu-link_after-bar-purple');
+                }
             }
 
             menuItens[menuItens.length - 1].style.color = '#fff';
